@@ -20,9 +20,12 @@ About Project
 
 This is a simple Python project based on Object-Oriented Programming (OOP).
 
+
 The project is used to create and display details of different types of people and employees.
 
-Features:
+
+Features
+
 
 Create Person
 Create Employee
@@ -45,12 +48,12 @@ The Employee class inherits from Person and stores: - Name - Age - ID - Salary
 The Manager class inherits from Employee and stores: - Name - Age - ID - Salary - Department
 4. Developer
 The Developer class inherits from Employee and stores: - Name - Age - ID - Salary - Programming Language
+
+
 OOP Concepts Used
 
 
 Inheritance
-
-
 Employee inherits from Person.
 Manager and Developer inherit from Employee.
 Method Overriding
@@ -59,7 +62,8 @@ Constructor
 The __init__() method is used to initialize object data.
 Encapsulation
 Employee ID and salary are stored using _id and _salary.
-Menu
+
+
 === Employee Management System ===
 1. Create Person
 2. Create Employee
@@ -97,8 +101,13 @@ Manager Name: Ved
 Age: 22
 ID: M111
 Salary: 56000
+
+
 Department: HR
+
+
 Author
 Ayush Jivani
-Project Type
+
+Python OOP / Employee Management System
 Python OOP / Employee Management System
