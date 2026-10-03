@@ -8,7 +8,7 @@ Language : Python
 
 
 
-explin video link:
+explin video link:https://drive.google.com/file/d/13TBDAg_gwPz3i0Sn7EV0eg_t7Ooc405Y/view?usp=drive_link
 
 
 repository link :https://github.com/ayushjivani082/py_project.5---OOP-Wrapper/blob/f0c35291e8194522ec70b0c57bfd5576e191b5a7/5.OOP%20WRAPPER.py
