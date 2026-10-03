@@ -1,0 +1,148 @@
+# Employee Management System
+
+
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def display_details(self):
+        print(f"Name: {self.name}")
+        print(f"Age: {self.age}")
+
+
+class Employee(Person):
+    def __init__(self, name, age, id, salary):
+        super().__init__(name, age)
+        self._id = id
+        self._salary = salary
+
+    def display_details(self):
+        print(f"Employee Name: {self.name}")
+        print(f"Age: {self.age}")
+        print(f"ID: {self._id}")
+        print(f"Salary: {self._salary}")
+
+
+class Manager(Employee):
+    def __init__(self, name, age, id, salary, department):
+        super().__init__(name, age, id, salary)
+        self.department = department
+
+    def display_details(self):
+        print(f"Manager Name: {self.name}")
+        print(f"Age: {self.age}")
+        print(f"ID: {self._id}")
+        print(f"Salary: {self._salary}")
+        print(f"Department: {self.department}")
+
+
+class Developer(Employee):
+    def __init__(self, name, age, id, salary, language):
+        super().__init__(name, age, id, salary)
+        self.language = language
+
+    def display_details(self):
+        print(f"Developer Name: {self.name}")
+        print(f"Age: {self.age}")
+        print(f"ID: {self._id}")
+        print(f"Salary: {self._salary}")
+        print(f"Programming Language: {self.language}")
+
+
+person = None
+employee = None
+manager = None
+developer = None
+
+
+while True:
+
+    print("\n=== Employee Management System ===")
+    print("1. Create Person")
+    print("2. Create Employee")
+    print("3. Create Manager")
+    print("4. Create Developer")
+    print("5. Show Details")
+    print("6. Exit")
+
+    choice = input("Enter your choice: ")
+
+
+    if choice == "1":
+
+        name = input("Enter Name: ")
+        age = input("Enter Age: ")
+
+        person = Person(name, age)
+
+        print("\nPerson Created.")
+        person.display_details()
+
+
+    elif choice == "2":
+
+        name = input("Enter Name: ")
+        age = input("Enter Age: ")
+        id = input("Enter ID: ")
+        salary = input("Enter Salary: ")
+
+        employee = Employee(name, age, id, salary)
+
+        print("\nEmployee Created.")
+        employee.display_details()
+
+
+    elif choice == "3":
+
+        name = input("Enter Name: ")
+        age = input("Enter Age: ")
+        id = input("Enter ID: ")
+        salary = input("Enter Salary: ")
+        department = input("Enter Department: ")
+
+        manager = Manager(name, age, id, salary, department)
+
+        print("\nManager Created.")
+        manager.display_details()
+
+
+    elif choice == "4":
+
+        name = input("Enter Name: ")
+        age = input("Enter Age: ")
+        id = input("Enter ID: ")
+        salary = input("Enter Salary: ")
+        language = input("Enter Programming Language: ")
+
+        developer = Developer(name, age, id, salary, language)
+
+        print("\nDeveloper Created.")
+        developer.display_details()
+
+
+    elif choice == "5":
+
+        print("\n--- Details ---")
+
+        if person is not None:
+            person.display_details()
+
+        if employee is not None:
+            employee.display_details()
+
+        if manager is not None:
+            manager.display_details()
+
+        if developer is not None:
+            developer.display_details()
+
+
+    elif choice == "6":
+
+        print("Exiting the system.")
+        break
+
+
+    else:
+        print("Invalid Choice")
